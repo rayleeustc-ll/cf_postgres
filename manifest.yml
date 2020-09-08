@@ -1,0 +1,12 @@
+---
+applications:
+- name: python-postgres-cf
+  memory: 256M
+  disk_quota: 256MB
+  random-route: true
+  buildpack: python_buildpack
+  command: python app.py
+  instances: 1
+  services:
+  - pgsql
+
