@@ -1,0 +1,10 @@
+CREATE TABLE users
+(
+	id SERIAL PRIMARY KEY,
+    username text,
+    email text,
+    password text
+);
+
+INSERT INTO users (username,email,password)
+VALUES ( 'lele', 'lele@bosch','123456');
